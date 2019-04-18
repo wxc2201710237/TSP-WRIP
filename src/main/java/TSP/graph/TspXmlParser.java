@@ -51,7 +51,7 @@ public class TspXmlParser {
             Element edge= (Element) it.next();
             double cost = Double.parseDouble(edge.attribute("cost").getValue());
             int id = Integer.parseInt(edge.getStringValue());
-            edges.put(id, (int)(cost));
+            edges.put(id, (int)cost);
         }
         graph.graph.add(edges);
     }
